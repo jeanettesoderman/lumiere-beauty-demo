@@ -89,4 +89,87 @@ window.SITE_CONFIG = {
     gallery5: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=85",
     gallery6: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=85"
   }
+,
+
+  services: [
+    {
+      key: "lashes",
+      name: "Lashes",
+      description: "Framhäv ögonen med fransar anpassade efter ditt uttryck.",
+      priceFrom: "Från 795 kr",
+      imageKey: "lashes"
+    },
+    {
+      key: "brows",
+      name: "Brows",
+      description: "Formning, färgning och styling för ett balanserat resultat.",
+      priceFrom: "Från 395 kr",
+      imageKey: "brows"
+    },
+    {
+      key: "facial",
+      name: "Facial",
+      description: "Vårdande ansiktsbehandling anpassad efter hudens behov.",
+      priceFrom: "Från 895 kr",
+      imageKey: "facial"
+    },
+    {
+      key: "nails",
+      name: "Nails",
+      description: "Klassiskt, elegant eller mer personligt. Du väljer känslan.",
+      priceFrom: "Från 595 kr",
+      imageKey: "nails"
+    },
+    {
+      key: "skincare",
+      name: "Skincare",
+      description: "Individuellt anpassad hudvård med fokus på lyster och balans.",
+      priceFrom: "Från 695 kr",
+      imageKey: "skincare"
+    }
+  ],
+
+  prices: [
+    {
+      category: "Lashes",
+      items: [
+        ["Nytt set klassiska fransar", "995 kr"],
+        ["Nytt set volym", "1 195 kr"],
+        ["Påfyllning", "från 695 kr"]
+      ]
+    },
+    {
+      category: "Brows",
+      items: [
+        ["Brynfärgning och formning", "395 kr"],
+        ["Brow Lift", "695 kr"],
+        ["Brow Lift inkl. färg", "795 kr"]
+      ]
+    },
+    {
+      category: "Ansikte & hud",
+      items: [
+        ["Klassisk ansiktsbehandling", "895 kr"],
+        ["Glow Treatment", "1 095 kr"],
+        ["Djuprengörande behandling", "1 195 kr"]
+      ]
+    },
+    {
+      category: "Naglar",
+      items: [
+        ["Gel Polish", "595 kr"],
+        ["Nagelförlängning", "995 kr"],
+        ["Återbesök", "695 kr"]
+      ]
+    }
+  ],
+
+  gallery: [
+    { imageKey: "gallery1", alt: "Beauty portrait", className: "tall" },
+    { imageKey: "gallery2", alt: "Hudvårdsprodukter", className: "" },
+    { imageKey: "gallery3", alt: "Naglar", className: "" },
+    { imageKey: "gallery4", alt: "Ansiktsbehandling", className: "wide" },
+    { imageKey: "gallery5", alt: "Beauty styling", className: "" },
+    { imageKey: "gallery6", alt: "Beauty studio", className: "" }
+  ]
 };

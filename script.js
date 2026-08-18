@@ -1,6 +1,68 @@
+
+function renderServices(c) {
+  const grid = document.getElementById("services-grid");
+  if (!grid || !Array.isArray(c.services)) return;
+
+  grid.innerHTML = c.services.map((service, index) => {
+    const specialClass = index === 3 ? ' class="service-card reveal service-card-offset"' : ' class="service-card reveal"';
+    const imgSrc = c.images?.[service.imageKey] || "";
+    return `
+      <article${specialClass}>
+        <img src="${imgSrc}" alt="${service.name}">
+        <div class="service-content">
+          <h3>${service.name}</h3>
+          <p>${service.description}</p>
+          <div class="service-bottom">
+            <span>${service.priceFrom}</span>
+            <a href="#priser">Se priser</a>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join("");
+}
+
+function renderPrices(c) {
+  const wrap = document.getElementById("price-columns");
+  if (!wrap || !Array.isArray(c.prices)) return;
+
+  wrap.innerHTML = c.prices.map(group => `
+    <div class="price-group reveal">
+      <h3>${group.category}</h3>
+      ${group.items.map(item => `
+        <div class="price-row">
+          <span>${item[0]}</span>
+          <strong>${item[1]}</strong>
+        </div>
+      `).join("")}
+    </div>
+  `).join("");
+}
+
+function renderGallery(c) {
+  const grid = document.getElementById("gallery-grid");
+  if (!grid || !Array.isArray(c.gallery)) return;
+
+  grid.innerHTML = c.gallery.map(item => {
+    const imgSrc = c.images?.[item.imageKey] || "";
+    const cls = item.className ? ` ${item.className}` : "";
+    return `
+      <figure class="gallery-item${cls} reveal">
+        <img src="${imgSrc}" alt="${item.alt}">
+      </figure>
+    `;
+  }).join("");
+}
+
 function applySiteConfig() {
   const c = window.SITE_CONFIG;
   if (!c) return;
+
+  renderServices(c);
+  renderPrices(c);
+  renderGallery(c);
+
+  document.querySelectorAll(".reveal").forEach(el => el.classList.add("visible"));
 
   if (c.images) {
     document.querySelectorAll("[data-image-key]").forEach(img => {

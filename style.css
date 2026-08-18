@@ -352,7 +352,7 @@ p {
   box-shadow: 0 14px 35px rgba(78,60,55,.05);
 }
 
-.service-card:nth-child(4) {
+.service-card-offset {
   grid-column: 2 / span 2;
 }
 
@@ -743,7 +743,7 @@ input:focus, textarea:focus {
   }
 
   .service-card,
-  .service-card:nth-child(4) {
+  .service-card-offset {
     grid-column: auto;
   }
 
