@@ -1,0 +1,25 @@
+Lägg kundens bilder i den här mappen.
+
+Rekommenderade filnamn:
+hero.jpg
+lashes.jpg
+brows.jpg
+facial.jpg
+nails.jpg
+skincare.jpg
+about.jpg
+gallery-1.jpg
+gallery-2.jpg
+gallery-3.jpg
+gallery-4.jpg
+gallery-5.jpg
+gallery-6.jpg
+
+När bilderna ligger här ändrar du sökvägarna i config.js.
+Exempel:
+hero: "images/hero.jpg"
+
+Tips:
+- Hero/about: gärna liggande eller stående högupplöst bild beroende på beskärning.
+- Galleri: blandade proportioner går bra.
+- Komprimera gärna bilderna så att sajten laddar snabbt.

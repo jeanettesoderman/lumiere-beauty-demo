@@ -2,6 +2,14 @@ function applySiteConfig() {
   const c = window.SITE_CONFIG;
   if (!c) return;
 
+  if (c.images) {
+    document.querySelectorAll("[data-image-key]").forEach(img => {
+      const key = img.dataset.imageKey;
+      const src = c.images[key];
+      if (src) img.src = src;
+    });
+  }
+
   const one = (selector, value) => {
     const el = document.querySelector(selector);
     if (el && value !== undefined && value !== null) el.textContent = value;

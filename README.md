@@ -1,49 +1,45 @@
-# Lumière Beauty Master v2
+# Lumière Beauty Master v3
 
-Det här är masterversionen av beauty-sajten.
+Version 3 gör kundbilder lika enkla att byta som kontaktuppgifter.
 
-## Viktigaste skillnaden mot v1
-Vanliga kunduppgifter ligger nu i `config.js`.
+## Det viktigaste
+Du har nu:
+- `config.js` för kunduppgifter
+- `images/` för kundens egna bilder
+- bildsökvägar samlade i `config.js`
 
-När en kund köper modellen kan du i första hand ändra:
+## Kundbilder, snabbast möjliga arbetsflöde
+1. Lägg kundens bilder i `images/`.
+2. Döp dem tydligt, till exempel:
+   - `hero.jpg`
+   - `lashes.jpg`
+   - `brows.jpg`
+   - `facial.jpg`
+   - `nails.jpg`
+   - `skincare.jpg`
+   - `about.jpg`
+   - `gallery-1.jpg` osv.
+3. Öppna `config.js`.
+4. Ändra exempelvis:
+   `hero: "images/hero.jpg"`
+5. Spara och testa lokalt.
+
+## Övrig kundanpassning
+I `config.js` kan du också byta:
 - företagsnamn
 - sidtitel och beskrivning
-- hero-rubrik och text
+- hero-text
 - om-salongen-text
 - bokningslänk
 - adress
 - telefon
 - e-post
 - öppettider
-- Instagram
-- Facebook
-- kontaktformulärets mottagning
+- Instagram/Facebook
+- kontaktformulär
 
-utan att behöva leta genom `index.html`.
-
-## Kundorder, snabb arbetsgång
-1. Kopiera hela projektmappen.
-2. Döp kopian efter kunden.
-3. Öppna `config.js`.
-4. Byt kunduppgifterna.
-5. Byt bilder och priser/tjänster vid behov i `index.html`.
-6. Testa lokalt.
-7. Skapa kundrepo på GitHub.
-8. Publicera via Netlify.
-9. Koppla kundens domän.
-
-## Bokningssystem
-I `config.js`:
-- `booking.url: "#"` betyder demo.
-- Byt till kundens riktiga Bokadirekt-/bokningslänk när den finns.
-
-## Kontaktformulär
-Standard:
-`mode: "demo"`
-
-För extern formulärtjänst:
-`mode: "external"`
-och fyll i `actionUrl`.
+## Viktigt för bilder
+För riktiga kundsajter rekommenderas lokala bilder i `images/` i stället för externa demo-URL:er.
 
 ## Nästa förbättring
-Om vi vill kan även behandlingar, priser och galleri flyttas till konfigurationsfilen i en senare version.
+Nästa logiska steg är att flytta behandlingar, priser och galleriinnehåll till `config.js`, så att nästan hela sajten kan kundanpassas från en enda fil.
