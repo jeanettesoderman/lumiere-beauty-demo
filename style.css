@@ -852,3 +852,14 @@ input:focus, textarea:focus {
 .language-select-wrap{margin-left:auto;display:flex;align-items:center;position:relative;z-index:20}
 .language-select{border:0;border-bottom:1px solid rgba(80,80,80,.28);background:transparent;color:inherit;font:600 11px/1.2 Arial,Helvetica,sans-serif;padding:5px 20px 5px 4px;cursor:pointer}
 @media(max-width:900px){.language-select-wrap{margin-left:10px}.language-select{font-size:10px;max-width:115px}}
+
+
+/* Header spacing refinement */
+@media (min-width:901px){
+  .brand, .logo, .site-logo{
+    flex-shrink:0;
+  }
+  .main-nav, nav{
+    margin-left:34px;
+  }
+}
