@@ -1,31 +1,49 @@
-# Lumière Beauty Studio demo
+# Lumière Beauty Master v2
 
-Första säljbara demosajten för projektet.
+Det här är masterversionen av beauty-sajten.
 
-## Filer
-- index.html
-- style.css
-- script.js
+## Viktigaste skillnaden mot v1
+Vanliga kunduppgifter ligger nu i `config.js`.
 
-## Starta lokalt
-1. Packa upp ZIP-filen.
-2. Öppna mappen i VS Code.
-3. Öppna `index.html` i webbläsaren, eller använd Live Server.
+När en kund köper modellen kan du i första hand ändra:
+- företagsnamn
+- sidtitel och beskrivning
+- hero-rubrik och text
+- om-salongen-text
+- bokningslänk
+- adress
+- telefon
+- e-post
+- öppettider
+- Instagram
+- Facebook
+- kontaktformulärets mottagning
 
-## Publicera på Netlify
-Du kan antingen:
-- dra hela mappen till Netlify manuellt, eller
-- lägga projektet på GitHub och koppla GitHub-repot till Netlify.
+utan att behöva leta genom `index.html`.
 
-## Det som är demo
-- Företagsnamn
-- Telefon, e-post och adress
-- Priser
-- Bokningsknapp
-- Kontaktformulär
-- Bilder från Unsplash
+## Kundorder, snabb arbetsgång
+1. Kopiera hela projektmappen.
+2. Döp kopian efter kunden.
+3. Öppna `config.js`.
+4. Byt kunduppgifterna.
+5. Byt bilder och priser/tjänster vid behov i `index.html`.
+6. Testa lokalt.
+7. Skapa kundrepo på GitHub.
+8. Publicera via Netlify.
+9. Koppla kundens domän.
 
-Bilderna laddas från Unsplash och kan senare ersättas med kundens egna bilder eller lokala bildfiler.
+## Bokningssystem
+I `config.js`:
+- `booking.url: "#"` betyder demo.
+- Byt till kundens riktiga Bokadirekt-/bokningslänk när den finns.
 
-## Nästa steg
-När grunddesignen känns rätt kan vi göra nästa version mer återanvändbar med en separat konfigurationsfil för företagsnamn, kontaktuppgifter, behandlingar, priser och bokningslänk.
+## Kontaktformulär
+Standard:
+`mode: "demo"`
+
+För extern formulärtjänst:
+`mode: "external"`
+och fyll i `actionUrl`.
+
+## Nästa förbättring
+Om vi vill kan även behandlingar, priser och galleri flyttas till konfigurationsfilen i en senare version.

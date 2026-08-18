@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Lumière Beauty Studio – lashes, brows, hudvård och naglar i en elegant salongsmiljö." />
-  <title>Lumière Beauty Studio</title>
+  <title data-site-title>Lumière Beauty Studio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top">Lumière</a>
+      <a class="brand" href="#top" data-brand-short>Lumière</a>
 
       <button class="menu-toggle" aria-label="Öppna meny" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -27,7 +27,7 @@
         <a href="#priser">Priser</a>
         <a href="#galleri">Galleri</a>
         <a href="#kontakt">Kontakt</a>
-        <a class="btn btn-small" href="#boka">Boka tid</a>
+        <a class="btn btn-small" href="#boka" data-nav-booking>Boka tid</a>
       </nav>
     </div>
   </header>
@@ -36,19 +36,16 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">LUMIÈRE BEAUTY STUDIO</p>
-          <h1>Skönhet med känsla för detaljer</h1>
-          <p class="lead">
-            Professionella behandlingar för dig som vill framhäva det naturliga,
-            unna dig en stund för dig själv och lämna salongen med den där lilla extra känslan.
-          </p>
+          <p class="eyebrow" data-business-name-upper>LUMIÈRE BEAUTY STUDIO</p>
+          <h1 data-hero-title>Skönhet med känsla för detaljer</h1>
+          <p class="lead" data-hero-text></p>
           <div class="hero-actions">
             <a class="btn" href="#boka">Boka tid</a>
             <a class="btn btn-ghost" href="#behandlingar">Se behandlingar</a>
           </div>
           <div class="hero-note">
             <span class="gold-line"></span>
-            <span>Lashes · Brows · Hudvård · Naglar</span>
+            <span data-service-summary>Lashes · Brows · Hudvård · Naglar</span>
           </div>
         </div>
 
@@ -164,15 +161,9 @@
         </div>
         <div class="about-copy reveal">
           <p class="eyebrow">OM LUMIÈRE</p>
-          <h2>En stund som bara är din</h2>
-          <p>
-            På Lumière Beauty Studio kombinerar vi noggrant utförda behandlingar
-            med personlig service och en lugn, elegant miljö.
-          </p>
-          <p>
-            Vi arbetar med kvalitetsprodukter och anpassar varje behandling efter
-            dina önskemål, din stil och dina förutsättningar.
-          </p>
+          <h2 data-about-title>En stund som bara är din</h2>
+          <p data-about-text-1></p>
+          <p data-about-text-2></p>
           <a class="text-link" href="#kontakt">Lär känna oss bättre</a>
         </div>
       </div>
@@ -279,11 +270,11 @@
       <div class="container booking-grid">
         <div class="reveal">
           <p class="eyebrow light">BOKA DIN BEHANDLING</p>
-          <h2>Din nästa Lumière-stund väntar</h2>
+          <h2 data-booking-title>Din nästa Lumière-stund väntar</h2>
           <p>Välj behandling och hitta en tid som passar dig.</p>
         </div>
         <div class="booking-action reveal">
-          <a class="btn btn-light" href="#" onclick="return false;">Boka tid online</a>
+          <a class="btn btn-light" href="#" data-booking-link>Boka tid online</a>
           <span>Demo-knapp. Här kopplas kundens bokningssystem in.</span>
         </div>
       </div>
@@ -293,30 +284,25 @@
       <div class="container contact-grid">
         <div class="contact-info reveal">
           <p class="eyebrow">KONTAKT</p>
-          <h2>Välkommen till Lumière</h2>
+          <h2 data-contact-title>Välkommen till Lumière</h2>
 
           <div class="contact-block">
             <h3>Besök oss</h3>
-            <p>Storgatan 24<br>553 21 Jönköping</p>
+            <p data-address></p>
           </div>
 
           <div class="contact-block">
             <h3>Kontakt</h3>
-            <p>036-123 45 67<br>hello@lumierebeauty.se</p>
+            <p><span data-phone></span><br><span data-email></span></p>
           </div>
 
           <div class="contact-block">
             <h3>Öppettider</h3>
-            <p>
-              Mån–Tors: 10.00–18.00<br>
-              Fredag: 09.00–17.00<br>
-              Lördag: 10.00–14.00<br>
-              Söndag: Stängt
-            </p>
+            <p data-opening-hours></p>
           </div>
         </div>
 
-        <form class="contact-form reveal" action="#" method="post" onsubmit="return handleDemoForm(event)">
+        <form class="contact-form reveal" action="#" method="post" data-contact-form>
           <div class="form-row">
             <label>
               Namn
@@ -348,8 +334,8 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand footer-brand" href="#top">Lumière</a>
-        <p>Beauty Studio</p>
+        <a class="brand footer-brand" href="#top" data-brand-short>Lumière</a>
+        <p data-business-type>Beauty Studio</p>
       </div>
       <div>
         <h4>Behandlingar</h4>
@@ -360,8 +346,8 @@
       </div>
       <div>
         <h4>Följ oss</h4>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
+        <a href="#" data-instagram>Instagram</a>
+        <a href="#" data-facebook>Facebook</a>
       </div>
       <div>
         <h4>Information</h4>
@@ -370,11 +356,12 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2026 Lumière Beauty Studio</span>
+      <span data-copyright>© 2026 Lumière Beauty Studio</span>
       <span>Demo website</span>
     </div>
   </footer>
 
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
