@@ -73,3 +73,7 @@ Lägg bilderna i `images/` och byt bildsökvägarna i `config.js`.
 6. Push till kundens GitHub-repo.
 7. Netlify publicerar automatiskt.
 8. Koppla kundens domän.
+
+
+## Språk
+Automatisk språkdetektering + manuellt språkval: Svenska, English, Dansk, Deutsch, Español, Français, Italiano, Português.
