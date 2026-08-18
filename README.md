@@ -77,3 +77,7 @@ Lägg bilderna i `images/` och byt bildsökvägarna i `config.js`.
 
 ## Språk
 Automatisk språkdetektering + manuellt språkval: Svenska, English, Dansk, Deutsch, Español, Français, Italiano, Português.
+
+
+## v3 language completion
+Reviews, contact form, placeholders, opening hours, service text, price labels and remaining static text are now translated for all exposed languages. Prices intentionally remain in SEK because the demo represents a Swedish salon; only the surrounding price wording is localized.

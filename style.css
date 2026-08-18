@@ -863,3 +863,22 @@ input:focus, textarea:focus {
     margin-left:34px;
   }
 }
+
+
+/* Lumière multilingual header refinement */
+@media (min-width: 901px){
+  .nav-wrap{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    align-items:center;
+    column-gap:36px;
+  }
+  .main-nav{
+    justify-self:start;
+    margin-left:0 !important;
+  }
+  .language-select-wrap{
+    justify-self:end;
+    margin-left:0;
+  }
+}
